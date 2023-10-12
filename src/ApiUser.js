@@ -12,15 +12,15 @@ const ApiUser = () => {
     }, []);
 
     return (
-        <>
+        <div className="container">
             <h1>Total User: {user.length}</h1>
-            <p>Now showing user data </p>
+            <p>API Link: ( "https://jsonplaceholder.typicode.com/users" )</p>
             <ul>
                 {user.map((userData) => (
                     <li key={userData.id}>{userData.name} - {userData.username}</li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }
 

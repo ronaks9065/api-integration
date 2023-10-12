@@ -15,8 +15,9 @@ const ApiAxios = () => {
     }, []);
 
     return (
-        <>
+        <div className='container'>
             <h1>Total Count of users using Axios: {names.length}</h1>
+            <p>Api Link: ( "https://mocki.io/v1/d4867d8b-b5d5-4a48-a4ab-79131b5809b8" )</p>
             <ul>
                 {names.map((item) => (
                     <li key={item.id}>{item.name}
@@ -24,7 +25,7 @@ const ApiAxios = () => {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }
 
